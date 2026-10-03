@@ -6,8 +6,8 @@ A full-stack application that reviews product and service listings against a mar
 
 | | Link |
 |---|---|
-| Live application | `<VERCEL_URL>` |
-| Backend API (health) | `<RENDER_URL>/api/health` |
+| Live application | https://marketplace-listing-reviewer.vercel.app |
+| Backend API (health) | https://marketplace-listing-reviewer.onrender.com/api/health |
 | Repository | https://github.com/ritik190803/marketplace-listing-reviewer |
 
 > The backend runs on Render's free tier and sleeps after ~15 minutes of inactivity. The first request can take up to a minute while it wakes up.
@@ -166,7 +166,7 @@ No secrets are committed; see `backend/.env.example` and `frontend/.env.example`
 cd backend
 npm test                                  # 39 unit/API tests, no database or AI calls needed
 npm run smoke                             # end-to-end workflow against a running local server
-npm run smoke -- https://<RENDER_URL>     # same checks against production
+npm run smoke -- https://marketplace-listing-reviewer.onrender.com     # same checks against production    # same checks against production
 ```
 
 | Test file | Covers |
